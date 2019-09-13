@@ -20,7 +20,8 @@ export class HomePage {
   ]
   calendar = {
     mode: this.calendarModes[0].key,
-    currentDate: new Date()
+    currentDate: new Date(),
+     queryMode: 'remote',
   }; // these are the variable used by the calendar.
   constructor(public navCtrl: NavController,
     private actionSheetCtrl: ActionSheetController,

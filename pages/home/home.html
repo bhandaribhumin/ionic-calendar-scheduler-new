@@ -39,6 +39,7 @@
 	<!-- <p>{{selectedObject | json}}</p>
         <p>{{eventSource | json}}</p> -->
 	<calendar 
+  (onRangeChanged)="onRangeChanged($event)"
   [monthviewEventDetailTemplate]="template"
   [eventSource]="eventSource" [markDisabled]="markDisabled" [calendarMode]="calendar.mode" [currentDate]="calendar.currentDate"
 	 (onCurrentDateChanged)="onCurrentDateChanged($event)" (onEventSelected)="onEventSelected($event)" (onTitleChanged)="onViewTitleChanged($event)"
